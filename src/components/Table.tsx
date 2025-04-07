@@ -49,7 +49,7 @@ function Table() {
             <th className="p-2 border border-gray-300">FILTER</th>
             <th className="p-2 border border-gray-300">EDIT TAGS</th>
             <th className="p-2 border border-gray-300">PDF</th>
-            <th className="p-2 border border-gray-300">
+            <th className="p-2 border border-gray-300 w-36">
               <HoverDatePicker text={"Start"} />
             </th>
             <th className="p-2 border border-gray-300">PROGRESS</th>
@@ -61,7 +61,7 @@ function Table() {
             <tr key={row.id} className="hover:bg-gray-100">
               <td className="p-4 border border-white">{row.id}</td>
               <td className="p-4 border border-white">{row.name}</td>
-              <td className="p-4 border border-white flex gap-1 justify-center items-center">
+              <td className="p-4 flex gap-1 justify-center items-center">
                 {tags.map((tag, index) => (
                   <Tag key={index} text={tag.short} bgColor={tag.bgColor} />
                 ))}
